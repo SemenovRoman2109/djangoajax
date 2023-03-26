@@ -1,0 +1,5 @@
+<h2>Список книг по запиту {{ filter_text }}</h2>
+{% for book in books %}
+    <p>{{ book.name }}</p>
+    <img src="{{ book.image.url }}" alt="">
+{% endfor %}
